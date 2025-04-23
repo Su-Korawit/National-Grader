@@ -1,0 +1,9 @@
+# Author: Korawit Suporn
+# Date  : 23 Apr. 2025
+# Editor: Vim
+
+num = input()
+opera = input()
+
+result = num + opera + str(int(num))
+print(num, opera, rnum, "=", eval(result))

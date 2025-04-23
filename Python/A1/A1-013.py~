@@ -1,0 +1,11 @@
+# Author: Korawit Suporn
+# Date  : 23 Apr. 2025
+# Editor: Vim
+
+ch = input()
+ps = input()
+
+collection = ['H', "4567"]
+
+if ch, ps in collection:
+    print("safe unlocked")

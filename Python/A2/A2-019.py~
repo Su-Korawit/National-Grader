@@ -1,0 +1,36 @@
+# Author: Korawit Suporn
+# Date: 23 Apr. 2025
+# Editor: Vim
+
+string = input()
+
+string = string.upper()
+
+lst = list(string)
+
+if 'B' in string:
+    head = lst.index('B')
+    tail = head + 1
+
+    count = 0
+    mx = 0
+    while 'B' in lst:
+        if tail >= len(lst):
+            if count > mx:
+                mx = count
+
+            lst[head] = 'Z'
+
+
+        if lst[tail] == 'U':
+            count += 1
+
+        else:
+            if count > mx:
+                mx = count
+            count = 0
+            lst[head] = 'Z'
+
+            head = lst.index('B')
+            tail = head + 1
+
